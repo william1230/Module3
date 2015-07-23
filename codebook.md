@@ -87,3 +87,9 @@ Classes ‘data.table’ and 'data.frame':	11880 obs. of  11 variables:
                                                      3rd Qu.:63.25   3rd Qu.:-0.07836  
                                                      Max.   :95.00   Max.   : 0.97451  
  ```
+
+## Save to file
+Running the code below will generate a txt file of tidy data in your working directory
+```{r}
+write.table(dtTidy, "tidyData.txt", quote=FALSE, sep="\t", row.names=FALSE)
+```
