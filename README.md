@@ -2,8 +2,8 @@
 ## Working Directory
 Put the unzipped "UCI_HAR_Dataset" and the data files into "./data" folder of the working directory
 
-## run_analysis.r
+## Run Analysis
 The purpose of run_analysis.r is to merge, transform and clean the dataset into a tidy dataset.
 
-## tidyData.txt
-This is the tidy dataset output from running run_analysis.r.
+## Output File
+The "tidyData.txt" is the tidy dataset output from running run_analysis.r.
