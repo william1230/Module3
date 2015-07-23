@@ -99,3 +99,5 @@ dt$featAxis <- factor(x %*% y, labels=c(NA, "X", "Y", "Z"))
 setkey(dt, subject, activity, featDomain, featAcceleration, featInstrument, featJerk, featMagnitude, featVariable, featAxis)
 dtTidy <- dt[, list(count = .N, average = mean(value)), by=key(dt)]
 
+## Output tidyData.txt into working directory
+write.table(dtTidy, "tidyData.txt", quote=FALSE, sep="\t", row.names=FALSE)
